@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouCode - مدرسة تطوير الويب</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'cairo': ['Cairo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <div class="w-12 h-12 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">YC</span>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-800">YouCode</h1>
+                        <p class="text-gray-600">مدرسة تطوير الويب</p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex space-x-6 space-x-reverse">
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors">عن المدرسة</a>
+                    <a href="#faq" class="text-gray-700 hover:text-blue-600 transition-colors">الأسئلة الشائعة</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors">تواصل معنا</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-5xl font-bold mb-6">مرحباً بك في YouCode</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">
+                مدرسة تطوير الويب الأولى في المغرب. تعلم البرمجة من الصفر بدون الحاجة لخلفية تقنية
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                    سجل الآن
+                </button>
+                <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+                    تعرف أكثر
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4">شنو هي YouCode؟</h3>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-8 rounded-xl border-r-4 border-blue-600">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        YouCode هي مدرسة ديال الكودينغ كاتركز على تطوير الويب (Web Development). ما كاتحتاجش لا دبلوم لا تجربة سابقة. الأهم هو تكون عندك القدرة تتعلم وكتبان عندك الرغبة باش تدخل المجال.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4">مميزات YouCode</h3>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">لا تحتاج دبلوم</h4>
+                    <p class="text-gray-600">أي واحد عندو الرغبة يتعلم، يقدر يدفع</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">تقييم القدرات</h4>
+                    <p class="text-gray-600">YouCode كاتقيم القدرات ديالك من خلال مرحلة presentiel</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">عمل جماعي</h4>
+                    <p class="text-gray-600">تعلم العمل مع الفريق وتطوير المهارات الشخصية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4">الأسئلة المتكررة على YouCode</h3>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto space-y-6">
+                <!-- FAQ Item 1 -->
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-3">❓ واش خاصني شي دبلوم باش نتسجل؟</h4>
+                    <p class="text-gray-700">لا، ما كاين حتى شرط ديال الدبلوم ولا تجربة. أي واحد عندو الرغبة يتعلم، يقدر يدفع. YouCode كاتقيم القدرات ديالك من خلال مرحلة presentiel.</p>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-3">❓ شنو هي مراحل presentiel؟</h4>
+                    <p class="text-gray-700 mb-3">فيه 3 مراحل:</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1 mr-4">
+                        <li>اختبار الحافز (Motivation)</li>
+                        <li>الاختبار التقني (Technique)</li>
+                        <li>اختبار المهارات الشخصية (Soft Skills)</li>
+                    </ul>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-3">❓ شنو كاين فاختبار الحافز؟</h4>
+                    <p class="text-gray-700">فهاد الاختبار كاتجاوب على أسئلة باش تعرفهم على راسك: شنو قريتي، علاش باغي تدخل YouCode، وشنو الهدف ديالك. خاصك تقنعهم باش يعطيوك بلاصة فـ SAS.</p>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-3">❓ شنو كاين فـ الاختبار التقني؟</h4>
+                    <p class="text-gray-700">كاينين شحال من تمرين (الأعداد كاتختلف) فاللغة C. التمارين ساهلين نسبياً، وهدفهم هو يشوفو الطريقة اللي كتفكر بها، والقدرة ديالك تتعلم فالوقت قصير.</p>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-3">❓ شنو كاين فـ اختبار المهارات الشخصية (Soft Skills)?</h4>
+                    <p class="text-gray-700 mb-3">كتخدم مع فريق على مشروع نظري، وكاتعرضوه قدام اللجنة. الهدف هو يلاحظو:</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1 mr-4">
+                        <li>كيفاش كتخدم مع الآخرين</li>
+                        <li>كيفاش كاتقسمو المهام</li>
+                        <li>واش كتخطط مزيان</li>
+                        <li>واش عندك روح الفريق</li>
+                    </ul>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-3">❓ شنو كاين فـ meet أونلاين؟</h4>
+                    <p class="text-gray-700">كاين اجتماع ضروري فـ Google Meet. خاصك تحضر وتكتب الإسم ديالك فـ الشات باش يحتسبو الحضور ديالك. كاين واحد representant من YouCode كيشرح شنو غادي تقرا، وشنو كيتسناوك فالمسار ديالك.</p>
+                </div>
+
+                <!-- FAQ Item 7 -->
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-3">❓ شنو هي SAS؟</h4>
+                    <p class="text-gray-700 mb-3">SAS هي مرحلة انتقائية كتدوم حوالي أسبوعين:</p>
+                    <div class="space-y-3">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h5 class="font-semibold text-blue-800 mb-2">الأسبوع الأول:</h5>
+                            <p class="text-blue-700">كتتعلم الأساسيات: كيفاش تsetup l'environnement، كيفاش تخدم بـ git و compiler، وتمارين فالغة C.</p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <h5 class="font-semibold text-green-800 mb-2">الأسبوع الثاني:</h5>
+                            <p class="text-green-700">كتدير تمارين أكثر، وكتخدم على مفاهيم معمقة شوية باش تكون واجد لمشروع نهاية SAS.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold mb-4">جاهز تبدأ رحلتك مع YouCode؟</h3>
+            <p class="text-xl mb-8">سجل الآن وابدأ رحلتك في عالم البرمجة</p>
+            <button class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors">
+                سجل الآن مجاناً
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 space-x-reverse mb-4">
+                        <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold">YC</span>
+                        </div>
+                        <h4 class="text-xl font-bold">YouCode</h4>
+                    </div>
+                    <p class="text-gray-300">مدرسة تطوير الويب الأولى في المغرب</p>
+                </div>
+                <div>
+                    <h5 class="text-lg font-semibold mb-4">روابط سريعة</h5>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#about" class="hover:text-white transition-colors">عن المدرسة</a></li>
+                        <li><a href="#faq" class="hover:text-white transition-colors">الأسئلة الشائعة</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">البرامج</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-lg font-semibold mb-4">تواصل معنا</h5>
+                    <div class="space-y-2 text-gray-300">
+                        <p>📧 info@youcode.ma</p>
+                        <p>📞 +212 5XX XX XX XX</p>
+                        <p>📍 المغرب</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 YouCode. جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html> 
